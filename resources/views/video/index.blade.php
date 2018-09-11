@@ -1,7 +1,7 @@
 @extends('layout.app')
 @section('content')
     <label>
-        <h2>2018-09-10 海峡两岸直播视频</h2>
+        <h2>【最新】2018-09-10期海峡两岸直播视频</h2>
     </label>
     <section>
         {{--<iframe
