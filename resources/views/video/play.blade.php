@@ -44,6 +44,7 @@
                 民进党认同度史上最低。<br>
                 民进党认同度史上最低。<br>
             </div>
+            <label>本期视频关键词：</label>
         </div>
     </div>
 @endsection
