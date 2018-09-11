@@ -4,11 +4,12 @@
         <h2>2018-09-10 海峡两岸直播视频</h2>
     </label>
     <section>
-        <iframe class="ldgplayer" height="470" width="782"
-                src="http://www.jinriguanzhu.cc/play.html?url=b72736689b8e4e908cb78c237bb8c368&amp;type=cntv"
+        {{--<iframe
+                src="http://www.jinriguanzhu.cc/play.html?url=e567a64df17a48298e8d717ac3df81c2&amp;type=cntv"
                 frameborder="0" border="0" marginwidth="0" marginheight="0" scrolling="no">
             <iframe class="ldgplayer" src="/play.html?url=b72736689b8e4e908cb78c237bb8c368&amp;type=cntv"
-                    frameborder="0" border="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+                    frameborder="0" border="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>--}}
+            <iframe class="ldgplayer" height="470" width="782"  frameborder="0" border="0" marginwidth="0" marginheight="0" scrolling="no" src="http://118.24.69.15:9988?pid=1d284b38be1f4051b6b64cea583e3631" width="100%" height="800"></iframe>
     </section>
     <aside>
         <ul>
