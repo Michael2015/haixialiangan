@@ -19,5 +19,5 @@ Route::get('/', function () {
 Route::get('/','VideoController@index');
 Route::get('/video','VideoController@video');
 Route::get('/feature','VideoController@feature');
-Route::get('/video/{date}.html','VideoController@vplay');
-Route::get('/feature/{date}-{id}.html','VideoController@fplay');
+Route::get('/video/{guid}.html','VideoController@vplay');
+Route::get('/feature/{date}/{guid}.html','VideoController@fplay');

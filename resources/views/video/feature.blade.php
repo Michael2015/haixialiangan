@@ -1,111 +1,24 @@
 @extends('layout.app')
 @section('content')
     <div class="ft-ll">
-        <label>2018-09-01期《海峡两岸》直播视频花絮</label>
+        @foreach ($feature_data as $key=>$feature)
+        <label>{{$key}}期《海峡两岸》直播视频花絮</label>
         <div class="video-list">
             <ul>
+                @foreach ($feature as $f)
                 <li>
-                    <a href="/feature/20180501-1.html"><img
-                                src="http://xinwenlianbo.tv/uploads/allimg/180906/3-1PZ6200K10-L.jpg"
-                                alt="《新闻联播》2018年9月7日完整直播视频"></a>
-                    <a title="《新闻联播》2018年9月7日完整直播视频" href="/cctv/49233.html">2018-09-07期 《海峡两岸》</a>
+                    <a href="/feature/{{$f->date}}/{{$f->guid}}.html"><img
+                                src="https://img.haixialiangan.wang?img_url={{substr($f->video_key_frame_url,25)}}"
+                                alt="{{$f->video_title}}"></a>
+                    <a title="{{$f->video_title}}" href="/feature/{{$f->date}}/{{$f->guid}}.html">{{$f->video_title}}</a>
                 </li>
-                <li>
-                    <a href="/feature/20180501-2.htm"><img
-                                src="http://xinwenlianbo.tv/uploads/allimg/180906/3-1PZ6200K10-L.jpg"
-                                alt="《新闻联播》2018年9月7日完整直播视频"></a>
-                    <a title="《新闻联播》2018年9月7日完整直播视频" href="/cctv/49233.html">2018-09-07期 《海峡两岸》</a>
-                </li>
-                <li>
-                    <a href="/cctv/49233.html"><img
-                                src="http://xinwenlianbo.tv/uploads/allimg/180906/3-1PZ6200K10-L.jpg"
-                                alt="《新闻联播》2018年9月7日完整直播视频"></a>
-                    <a title="《新闻联播》2018年9月7日完整直播视频" href="/cctv/49233.html">2018-09-07期《海峡两岸》</a>
-                </li>
-                <li>
-                    <a href="/cctv/49233.html"><img
-                                src="http://xinwenlianbo.tv/uploads/allimg/180906/3-1PZ6200K10-L.jpg"
-                                alt="《新闻联播》2018年9月7日完整直播视频"></a>
-                    <a title="《新闻联播》2018年9月7日完整直播视频" href="/cctv/49233.html">2018-09-07期 《海峡两岸》</a>
-                </li>
-                <li>
-                    <a href="/cctv/49233.html"><img
-                                src="http://xinwenlianbo.tv/uploads/allimg/180906/3-1PZ6200K10-L.jpg"
-                                alt="《新闻联播》2018年9月7日完整直播视频"></a>
-                    <a title="《新闻联播》2018年9月7日完整直播视频" href="/cctv/49233.html">2018-09-07期 《海峡两岸》</a>
-                </li>
-                <li>
-                    <a href="/cctv/49233.html"><img
-                                src="http://xinwenlianbo.tv/uploads/allimg/180906/3-1PZ6200K10-L.jpg"
-                                alt="《新闻联播》2018年9月7日完整直播视频"></a>
-                    <a title="《新闻联播》2018年9月7日完整直播视频" href="/cctv/49233.html">2018-09-07期 《海峡两岸》</a>
-                </li>
-                <li>
-                    <a href="/cctv/49233.html"><img
-                                src="http://xinwenlianbo.tv/uploads/allimg/180906/3-1PZ6200K10-L.jpg"
-                                alt="《新闻联播》2018年9月7日完整直播视频"></a>
-                    <a title="《新闻联播》2018年9月7日完整直播视频" href="/cctv/49233.html">2018-09-07期 《海峡两岸》</a>
-                </li>
-                <li>
-                    <a href="/cctv/49233.html"><img
-                                src="http://xinwenlianbo.tv/uploads/allimg/180906/3-1PZ6200K10-L.jpg"
-                                alt="《新闻联播》2018年9月7日完整直播视频"></a>
-                    <a title="《新闻联播》2018年9月7日完整直播视频" href="/cctv/49233.html">2018-09-07期 《海峡两岸》</a>
-                </li>
+                @endforeach
+                <div class="clear"></div>
             </ul>
         </div>
-        <label>2018-09-01期《海峡两岸》直播视频花絮</label>
-        <div class="video-list">
-            <ul>
-                <li>
-                    <a href="/cctv/49233.html"><img
-                                src="http://xinwenlianbo.tv/uploads/allimg/180906/3-1PZ6200K10-L.jpg"
-                                alt="《新闻联播》2018年9月7日完整直播视频"></a>
-                    <a title="《新闻联播》2018年9月7日完整直播视频" href="/cctv/49233.html">2018-09-07期 《海峡两岸》</a>
-                </li>
-                <li>
-                    <a href="/cctv/49233.html"><img
-                                src="http://xinwenlianbo.tv/uploads/allimg/180906/3-1PZ6200K10-L.jpg"
-                                alt="《新闻联播》2018年9月7日完整直播视频"></a>
-                    <a title="《新闻联播》2018年9月7日完整直播视频" href="/cctv/49233.html">2018-09-07期 《海峡两岸》</a>
-                </li>
-                <li>
-                    <a href="/cctv/49233.html"><img
-                                src="http://xinwenlianbo.tv/uploads/allimg/180906/3-1PZ6200K10-L.jpg"
-                                alt="《新闻联播》2018年9月7日完整直播视频"></a>
-                    <a title="《新闻联播》2018年9月7日完整直播视频" href="/cctv/49233.html">2018-09-07期《海峡两岸》</a>
-                </li>
-                <li>
-                    <a href="/cctv/49233.html"><img
-                                src="http://xinwenlianbo.tv/uploads/allimg/180906/3-1PZ6200K10-L.jpg"
-                                alt="《新闻联播》2018年9月7日完整直播视频"></a>
-                    <a title="《新闻联播》2018年9月7日完整直播视频" href="/cctv/49233.html">2018-09-07期 《海峡两岸》</a>
-                </li>
-                <li>
-                    <a href="/cctv/49233.html"><img
-                                src="http://xinwenlianbo.tv/uploads/allimg/180906/3-1PZ6200K10-L.jpg"
-                                alt="《新闻联播》2018年9月7日完整直播视频"></a>
-                    <a title="《新闻联播》2018年9月7日完整直播视频" href="/cctv/49233.html">2018-09-07期 《海峡两岸》</a>
-                </li>
-                <li>
-                    <a href="/cctv/49233.html"><img
-                                src="http://xinwenlianbo.tv/uploads/allimg/180906/3-1PZ6200K10-L.jpg"
-                                alt="《新闻联播》2018年9月7日完整直播视频"></a>
-                    <a title="《新闻联播》2018年9月7日完整直播视频" href="/cctv/49233.html">2018-09-07期 《海峡两岸》</a>
-                </li>
-                <li>
-                    <a href="/cctv/49233.html"><img
-                                src="http://xinwenlianbo.tv/uploads/allimg/180906/3-1PZ6200K10-L.jpg"
-                                alt="《新闻联播》2018年9月7日完整直播视频"></a>
-                    <a title="《新闻联播》2018年9月7日完整直播视频" href="/cctv/49233.html">2018-09-07期 《海峡两岸》</a>
-                </li>
-                <li>
-                    <a href="/cctv/49233.html"><img
-                                src="http://xinwenlianbo.tv/uploads/allimg/180906/3-1PZ6200K10-L.jpg"
-                                alt="《新闻联播》2018年9月7日完整直播视频"></a>
-                    <a title="《新闻联播》2018年9月7日完整直播视频" href="/cctv/49233.html">2018-09-07期 《海峡两岸》</a>
-                </li>
-            </ul>
+        @endforeach
+        <div class="page">
+            {{$feature_list->links()}}
         </div>
     </div>
 @endsection

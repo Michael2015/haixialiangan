@@ -116,7 +116,7 @@ header .nav_main a:first-child {
 .sidebar_per dt strong {
     color: #414141;
     display: inline-block;
-    font-size: 18px;
+    font-size: 16px;
     margin: 5px 9px 0 0;
     font-weight: normal;
 }
@@ -179,7 +179,14 @@ header .nav_main a:first-child {
     height: 133px;
     image-rendering: -webkit-optimize-contrast;
 }
-
+.video-list li a
+{
+    display: block;
+    width: 173px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
 .video-list li > a:first-child {
     display: block;
 }
@@ -203,28 +210,29 @@ header .nav_main a:first-child {
     padding: 0;
 }
 
-.dt-content section
-{
+.dt-content section {
     float: none;
     width: 100%;
 }
-label h2
-{
+
+label h2 {
     font-size: 16px;
     margin: 0;
 }
+
 .dt-rt ul li {
     list-style: none;
     float: left;
     width: 20%;
     text-align: center;
 }
-.dt-rt ul li img
-{
+
+.dt-rt ul li img {
     width: 96%;
     height: 133px;
 }
-.dt-rt ul li p{
+
+.dt-rt ul li p {
     width: 96%;
     margin: 5px;
     font-size: 14px;
@@ -232,9 +240,33 @@ label h2
     white-space: nowrap;
     text-overflow: ellipsis;
 }
-.dt-detail-ct
-{
+
+.dt-detail-ct {
     padding: 8px 0 18px;
+}
+.clear
+{
+    height: 0;
+    line-height: 0;
+    font-size: 0;
+    clear: both;
+}
+.page>.pagination {
+    margin: 0;
+    padding: 0;
+}
+.page>.pagination>li,.page>.pagination>li>span
+{
+    list-style: none;
+    float: left;
+    overflow: hidden;
+    margin-right: 9px;
+    font-size: 16px;
+
+}
+.page>.pagination>li span
+{
+    font-size: 14px;
 }
 footer.ifoot {
     padding: 1rem 0;

@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'default' => env('DB_CONNECTION', 'mysql'),
+    'default' => env('DB_CONNECTION', 'mongodb'),
 
     /*
     |--------------------------------------------------------------------------
@@ -76,6 +76,15 @@ return [
             'password' => env('DB_PASSWORD', ''),
             'charset' => 'utf8',
             'prefix' => '',
+        ],
+        'mongodb' => [
+            'driver'   => 'mongodb',
+            'host'     => '118.24.69.15',
+            'port'     => 27017,
+            'database' => 'haixialiangan',
+            'username' => '',
+            'password' => '',
+            'strict' => false,
         ],
 
     ],
