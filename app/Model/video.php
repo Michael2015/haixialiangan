@@ -20,7 +20,7 @@ class Video extends Eloquent
         if ($output) {
             $output = str_replace(['setItem0=', '(', ');', '?p=2&h=120'], '', $output);
             $output = json_decode($output, true);
-            $output = array_slice($output['data'], 0, 1);
+            $output = array_slice($output['data'], 0, 2);
         }
         self::buildData($output);
     }
@@ -29,7 +29,6 @@ class Video extends Eloquent
     //插入完整视频
     public static function buildData($row)
     {
-
         if (is_array($row)) {
             foreach ($row as $value) {
                 $obj = new self();
@@ -65,7 +64,7 @@ class Video extends Eloquent
     //获取最新一个视频id
     public static function getLastVideoId()
     {
-        $video_id = 'VIDE3CuQcHxMLZ46sfq12qK0180912';
+        $video_id = 'VIDE9IsmRBUAuQeuRFUQP7fg180917';
         $result = self::where('date', '=', date("Y-m-d"))->take(1)->get();
         $result = json_decode($result, true);
         if ($result) {

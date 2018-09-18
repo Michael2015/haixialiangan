@@ -65,7 +65,7 @@ class Feature extends Eloquent
     //获取最新一个视频id
     public static function getLastVideoId()
     {
-        $video_id = 'VIDE3CuQcHxMLZ46sfq12qK0180912';
+        $video_id = 'VIDEk7uHDyGqgWrGxhcSXCHF180917';
         $result = self::where('date', '=', date("Y-m-d"))->get();
         $result = json_decode($result, true);
         if ($result) {
