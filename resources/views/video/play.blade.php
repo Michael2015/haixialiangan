@@ -16,7 +16,7 @@
                 @foreach ($ass_video as $video)
                     <li>
                         <a href="{{$video['url']}}">
-                            <img src="https://img.haixialiangan.wang?img_url={{substr($video['video_key_frame_url'],25)}}"
+                            <img src="http://img.haixialiangan.wang?img_url={{substr($video['video_key_frame_url'],25)}}"
                                  alt="{{$video['video_title']}}">
                         </a>
                         <p>{{$video['video_title']}}</p>

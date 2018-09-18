@@ -8,7 +8,7 @@
                 @foreach ($feature as $f)
                 <li>
                     <a href="/feature/{{$f->date}}/{{$f->guid}}.html"><img
-                                src="https://img.haixialiangan.wang?img_url={{substr($f->video_key_frame_url,25)}}"
+                                src="http://img.haixialiangan.wang?img_url={{substr($f->video_key_frame_url,25)}}"
                                 alt="{{$f->video_title}}"></a>
                     <a title="{{$f->video_title}}" href="/feature/{{$f->date}}/{{$f->guid}}.html">{{$f->video_title}}</a>
                 </li>

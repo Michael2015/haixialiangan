@@ -13,7 +13,7 @@
             @foreach ($feature_video as $feature)
                 <li>
                     <a href="/feature/{{$feature['date']}}/{{$feature['guid']}}.html"><img
-                                src="https://img.haixialiangan.wang?img_url={{substr($feature['video_key_frame_url'],25)}}"
+                                src="http://img.haixialiangan.wang?img_url={{substr($feature['video_key_frame_url'],25)}}"
                                 alt="{{$feature['video_title']}}"></a>
                     <div>
                         <h3><a href="/feature/{{$feature['date']}}/{{$feature['guid']}}.html"><b>{{$feature['date']}}
