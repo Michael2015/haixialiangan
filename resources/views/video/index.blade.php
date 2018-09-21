@@ -32,10 +32,10 @@
                     <strong>最新视频 <span class="name-en">/New</span></strong>
                 </dt>
                 @foreach ($index_1_module_video as $index_1)
-                <dd class="sidebar_articles">
-                    <span>{{date('m-d',strtotime($index_1['date']))}}</span>
-                    <a target="_blank" href="/video/{{$index_1['guid']}}.html">{{$index_1['video_title']}}</a>
-                </dd>
+                    <dd class="sidebar_articles">
+                        <span>{{date('m-d',strtotime($index_1['date']))}}</span>
+                        <a target="_blank" href="/video/{{$index_1['guid']}}.html">{{$index_1['video_title']}}</a>
+                    </dd>
                 @endforeach
             </dl>
         </div>

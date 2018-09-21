@@ -14,6 +14,11 @@ use Illuminate\Support\Facades\DB;
 
 class VideoController extends Controller
 {
+    private $isMobile;
+    public function __construct()
+    {
+        $this->isMobile = isMobile();
+    }
     /**
      * Show the profile for the given user.
      *
@@ -53,7 +58,7 @@ class VideoController extends Controller
             'index_2_module_video' => $index_2_module_video,
             'index_3_module_video' => $index_3_module_video,
             'index_4_module_video' => $index_4_module_video,
-        ]);
+        ])->with('isMobile',$this->isMobile);
     }
 
     //视频列表
@@ -70,7 +75,7 @@ class VideoController extends Controller
             'keyword' => $keywords,
             'description' => $description,
             'video_list' => $video_list,
-        ]);
+        ])->with('isMobile',$this->isMobile);
     }
 
     //视频花絮
@@ -93,7 +98,7 @@ class VideoController extends Controller
             'description' => $description,
             'feature_list' => $feature_list,
             'feature_data' => $feature_data,
-        ]);
+        ])->with('isMobile',$this->isMobile);
     }
 
     //花絮播放页
@@ -122,7 +127,7 @@ class VideoController extends Controller
             'description' => $description,
             'video_content' => $video_content,
             'ass_video' => $ass_video,
-        ]);
+        ])->with('isMobile',$this->isMobile);
     }
 
     //完整视频播放页
@@ -151,6 +156,6 @@ class VideoController extends Controller
             'description' => $description,
             'video_content' => $video_content,
             'ass_video' => $ass_video,
-        ]);
+        ])->with('isMobile',$this->isMobile);
     }
 }
