@@ -6,7 +6,7 @@
     <meta name="keywords" content="{{$keyword}}"/>
     <meta name="description" content="{{$description}}"/>
     <link rel="shortcut icon" href="{{ URL::asset('favicon.ico') }}" type="image/x-icon"/>
-    <link rel="stylesheet" href="{{ URL::asset('css/style.css') }}" type="text/css"/>
+    <link rel="stylesheet" href="{{ URL::asset('css/m.style.css') }}" type="text/css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no"/>
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta http-equiv="Cache-Control" content="no-siteapp">
