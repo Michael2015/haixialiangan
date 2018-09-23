@@ -65,7 +65,7 @@ class Video extends Eloquent
     public static function getLastVideoId()
     {
         $video_id = 'VIDE9IsmRBUAuQeuRFUQP7fg180917';
-        $result = self::where('date', '=', date("Y-m-d",strtotime('-1 day')))->take(1)->get();
+        $result = self::where('date', '=', date("Y-m-d",strtotime('-2 days')))->take(1)->get();
         $result = json_decode($result, true);
         if ($result) {
             $video_id = isset($result[0]['video_id']) ? $result[0]['video_id'] : $video_id;
