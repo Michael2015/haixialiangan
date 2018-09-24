@@ -85,7 +85,7 @@ class VideoController extends Controller
         $keywords = '海峡两岸,海峡两岸直播片段';
         $description = '回放全部海峡两岸直播视频片段';
 
-        $feature_list = Feature::orderBy('video_focus_date', 'desc')->groupBy('date')->paginate(7);
+        $feature_list = Feature::orderBy('date', 'desc')->groupBy('date')->paginate(7);
 
         $feature_data = [];
         foreach ($feature_list as $date) {
