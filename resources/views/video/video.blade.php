@@ -8,7 +8,7 @@
                     <a href="/video/{{$video->guid}}.html"><img
                                 src="http://img.haixialiangan.wang?img_url={{substr($video->video_key_frame_url,25)}}"
                                 alt="{{$video->video_title}}"></a>
-                    <a title="{{$video->video_title}}" href="/cctv/49233.html">{{$video->video_title}}</a>
+                    <a title="{{$video->video_title}}" href="/video/{{$video->guid}}.html">{{$video->video_title}}</a>
                 </li>
             @endforeach
             <div class="clear"></div>

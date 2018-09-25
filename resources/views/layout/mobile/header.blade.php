@@ -23,8 +23,8 @@
             <img src="{{URL::asset('images/logo.png')}}" class="logo" height="38px" alt="海峡两岸">
         </a>
         <a href="{{URL::to('/')}}" class="menu current">海峡两岸</a>
-        <a href="{{URL::to('/video')}}" class="menu">海峡两岸完整视频</a>
-        <a href="{{URL::to('/feature')}}" class="menu">海峡两岸视频花絮</a>
+        <a href="{{URL::to('/video')}}" class="menu">完整视频</a>
+        <a href="{{URL::to('/feature')}}" class="menu">海视频花絮</a>
         <span class="icon_hot"></span>
     </div>
 </header>
