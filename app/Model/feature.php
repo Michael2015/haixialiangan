@@ -66,10 +66,10 @@ class Feature extends Eloquent
     public static function getLastVideoId()
     {
         $video_id = 'VIDEk7uHDyGqgWrGxhcSXCHF180917';
-        $result = self::where('date', '=', date("Y-m-d",strtotime('-2 days')))->take(1)->get();
+        $result = self::where('date', '<=', date("Y-m-d",strtotime('-1 day')))->orderBy('video_focus_date', 'desc')->take(1)->get();
         $result = json_decode($result, true);
         if ($result) {
-            $video_id = isset($result[0]['video_id']) ? $result[0]['video_id'] : $video_id;
+            $video_id = $result[0]['video_id'];
         }
         return $video_id;
     }
