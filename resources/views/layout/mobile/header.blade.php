@@ -11,12 +11,21 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta http-equiv="Cache-Control" content="no-siteapp">
 </head>
-<style>
-    .w{
-        width: 100%;
-    }
-</style>
 <body>
+<script>
+    (function(){
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https'){
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        }
+        else{
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
 <header>
     <div class="nav_main clearfix w">
         <a href="{{URL::to('/')}}"  title="海峡两岸">
