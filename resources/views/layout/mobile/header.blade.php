@@ -7,7 +7,7 @@
     <meta name="description" content="{{$description}}"/>
     <link rel="shortcut icon" href="{{ URL::asset('favicon.ico') }}" type="image/x-icon"/>
     <link rel="stylesheet" href="{{ URL::asset('css/m.style.css') }}" type="text/css"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=0"/>
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta http-equiv="Cache-Control" content="no-siteapp">
 </head>
@@ -24,7 +24,7 @@
         </a>
         <a href="{{URL::to('/')}}" class="menu current">海峡两岸</a>
         <a href="{{URL::to('/video')}}" class="menu">完整视频</a>
-        <a href="{{URL::to('/feature')}}" class="menu">海视频花絮</a>
+        <a href="{{URL::to('/feature')}}" class="menu">视频花絮</a>
         <span class="icon_hot"></span>
     </div>
 </header>
