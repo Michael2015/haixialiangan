@@ -51,6 +51,7 @@ header .nav_main a {
 .ldgplayer
 {
     width: 100%!important;
+    height: auto;!important;
 }
 header .nav_main a:first-child {
     padding-left: 0 !important;
