@@ -193,6 +193,7 @@ header .nav_main a:first-child {
 
 .dt-rt {
     float: left;
+    width: 100%;
 }
 
 .main label {
