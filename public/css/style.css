@@ -74,6 +74,7 @@ header .nav_main a:first-child {
 
 .main aside ul li {
     list-style: none;
+    margin-bottom: 5px;
 }
 
 .main aside ul li img {
@@ -85,8 +86,7 @@ header .nav_main a:first-child {
 }
 
 .main aside ul li h3 {
-    margin: 0 0 5px;
-    line-height: 1.8em;
+    margin: 0;
     font-weight: normal;
     color: #555;
     height: 70px;
