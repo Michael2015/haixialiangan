@@ -89,6 +89,8 @@ header .nav_main a:first-child {
     line-height: 1.8em;
     font-weight: normal;
     color: #555;
+    height: 70px;
+    overflow: hidden;
 }
 
 .main article {
