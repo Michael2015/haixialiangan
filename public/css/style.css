@@ -103,9 +103,9 @@ header .nav_main a:first-child {
     border-top: 6px solid #333;
     background-color: #fff;
     margin: 12px 0;
-    padding: 0 10px 0 14px;
+    padding: 0 10px;
     float: left;
-    width: 25%;
+    width: 253px;
 }
 
 .sidebar_per dt {
