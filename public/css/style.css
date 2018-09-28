@@ -74,7 +74,12 @@ header .nav_main a:first-child {
 
 .main aside ul li {
     list-style: none;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.main aside ul li:last-child
+{
+    margin-bottom: 0;
 }
 
 .main aside ul li img {
