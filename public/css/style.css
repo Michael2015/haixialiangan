@@ -29,6 +29,10 @@ header .nav_main {
     margin: 0 auto;
     position: relative
 }
+img
+{
+border:0; 
+}
 
 .w {
     width: 1100px;
