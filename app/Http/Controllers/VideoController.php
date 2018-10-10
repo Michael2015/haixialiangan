@@ -40,9 +40,9 @@ class VideoController extends Controller
 
         //首页最新视频模块
         $index_1_module_video = array_slice($index_video, 0, 15);
-        $index_2_module_video = array_slice($index_video, 15, 30);
-        $index_3_module_video = array_slice($index_video, 30, 45);
-        $index_4_module_video = array_slice($index_video, 45, 60);
+        $index_2_module_video = array_slice($index_video, 16, 30);
+        $index_3_module_video = array_slice($index_video, 36, 45);
+        $index_4_module_video = array_slice($index_video, 46, 60);
 
 
         $title = '央视海峡两岸_海峡两岸视频正在直播中';
