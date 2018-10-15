@@ -112,7 +112,7 @@ class VideoController extends Controller
             $keywords = $video_content[0]['keyword'];
             $description = $video_content[0]['content'];
             //关联视频
-            $ass_video = Feature::where('date', '=', $video_content[0]['date'])->where('guid', '<>', $guid)->take(5)->get();
+            $ass_video = Feature::where('date', '=', $video_content[0]['date'])->where('guid', '<>', $guid)->take(50)->get();
             $ass_video = json_decode($ass_video, true);
             array_walk($ass_video, function (&$v) {
                 $v['url'] = '/feature/'.$v['date'].'/'. $v['guid'] . '.html';
