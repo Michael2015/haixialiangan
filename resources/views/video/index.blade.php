@@ -2,13 +2,6 @@
 @section('content')
     <label>
         <h2>【最新】{{$newest_video['video_title']}}直播视频</h2>
-        <div class="bdsharebuttonbox">
-            <a href="#" class="bds_more" data-cmd="more"></a>
-            <a href="#" class="bds_bdhome" data-cmd="bdhome" title="分享到百度"></a>
-            <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
-            <a href="#" class="bds_tieba" data-cmd="tieba" title="分享到百度贴吧"></a>
-            <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
-        </div>
     </label>
     <section>
         <iframe class="ldgplayer" height="470" width="782" frameborder="0" border="0" marginwidth="0" marginheight="0"
@@ -93,6 +86,5 @@
             </dl>
         </div>
     </article>
-    <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"1","bdMiniList":["mshare","weixin","tsina","tieba","bdhome","qzone","douban","sqq","thx","ibaidu","meilishuo","mogujie","diandian","huaban","duitang","hx","fx","youdao","sdo","qingbiji","people","xinhua","mail","isohu","yaolan","wealink","ty","iguba","fbook","twi","linkedin","h163","evernotecn","copy","print"],"bdPic":"","bdStyle":"0","bdSize":"16"},"share":{},"image":{"viewList":["qzone","tsina","tqq","renren","weixin"],"viewText":"分享到：","viewSize":"16"}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='c='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Dat Date()/36e5)];</script>
 @endsection
 
