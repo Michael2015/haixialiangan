@@ -1,7 +1,7 @@
 @extends('layout.app')
 @section('content')
     <label>
-        <h2>【最新】{{$newest_video['video_title']}}直播视频</h2>
+        <h2><a href="/video/{{$newest_video['guid']}}.html">【最新】{{$newest_video['video_title']}}直播视频</a></h2>
     </label>
     <section>
         <iframe class="ldgplayer" height="470" width="782" frameborder="0" border="0" marginwidth="0" marginheight="0"
