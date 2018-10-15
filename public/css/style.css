@@ -232,6 +232,11 @@ header .nav_main a:first-child {
 label h2 {
     font-size: 16px;
     margin: 0;
+    float: left;
+}
+label .bdsharebuttonbox
+{
+    float: right;
 }
 
 .dt-rt ul li {
