@@ -192,7 +192,7 @@ header .nav_main a:first-child {
     height: 133px;
     image-rendering: -webkit-optimize-contrast;
 }
-.video-list li>a
+.video-list>ul>li>a
 {
     display: block;
     width: 173px;
