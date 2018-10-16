@@ -31,12 +31,13 @@ class Video extends Eloquent
     {
         if (is_array($row)) {
             foreach ($row as $value) {
+                preg_match('#(\d{8})#', $value['video_focus_date'], $matches);
                 $obj = new self();
                 $obj->video_id = $value['video_id'];
                 $obj->video_key_frame_url = $value['video_key_frame_url'];
                 $obj->video_focus_date = $value['video_focus_date'];
                 $obj->video_length = $value['video_length'];
-                $obj->date = date("Y-m-d", strtotime($value['video_focus_date']));
+                $obj->date = $matches ? date('Y-m-d',strtotime($matches[0])) : date("Y-m-d", strtotime($value['video_focus_date']));
                 $obj->video_title = $obj->date . '期 《海峡两岸》';
                 $obj->guid = $value['guid'];
                 $video_detail = self::getVideoContentByUrl($value['video_url']);
