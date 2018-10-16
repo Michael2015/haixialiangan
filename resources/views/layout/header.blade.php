@@ -32,6 +32,7 @@
         <a href="{{URL::to('/video')}}" class="menu">海峡两岸完整视频</a>
         <a href="{{URL::to('/feature')}}" class="menu">海峡两岸视频花絮</a>
         <span class="icon_hot"></span>
+        <a href="{{URL::to('/sitemap.html')}}" title="网站导航" style="float: right">网站导航</a>
     </div>
 </header>
 <div class="main w">
