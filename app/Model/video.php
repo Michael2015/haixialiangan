@@ -42,7 +42,7 @@ class Video extends Eloquent
                 $video_detail = self::getVideoContentByUrl($value['video_url']);
                 $obj->keyword = $video_detail[0];
                 $obj->content = $video_detail[1];
-                $result = self::where('date', '=', $obj->date)->get();
+                $result = self::where('guid', '=', $obj->guid)->take(1)->get();
                 if (empty(json_decode($result, true))) {
                     $obj->save();
                 }
