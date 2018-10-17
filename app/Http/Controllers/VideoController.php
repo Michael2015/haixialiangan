@@ -64,9 +64,9 @@ class VideoController extends Controller
     //视频列表
     public function video()
     {
-        $title = '央视海峡两岸直播完整视频集合';
+        $title = '央视海峡两岸直播视频列表';
         $keywords = '海峡两岸,海峡两岸直播';
-        $description = '回放全部海峡两岸直播视频';
+        $description = '海峡两岸直播视频历史回放合集';
 
         $video_list = Video::orderBy('video_focus_date', 'desc')->paginate(36);
 
@@ -81,9 +81,9 @@ class VideoController extends Controller
     //视频花絮
     public function feature()
     {
-        $title = '央视海峡两岸直播视频片段集合';
-        $keywords = '海峡两岸,海峡两岸直播片段';
-        $description = '回放全部海峡两岸直播视频片段';
+        $title = '央视海峡两岸直播视频片段列表';
+        $keywords = '海峡两岸,海峡两岸直播,海峡两岸直播视频片段';
+        $description = '海峡两岸直播视频历史回放片段合集';
 
         $feature_list = Feature::orderBy('date', 'desc')->groupBy('date')->paginate(7);
 
