@@ -1,7 +1,17 @@
 @extends('layout.app')
 @section('content')
     <label>
-        <h2><a href="/video/{{$newest_video['guid']}}.html">【最新】{{$newest_video['video_title']}}直播视频</a></h2>
+        <h2>
+            <a href="/video/{{$newest_video['guid']}}.html">【最新】{{$newest_video['video_title']}}直播视频</a>
+        </h2>
+        <div class="bdsharebuttonbox">
+            <a href="#" class="bds_more" data-cmd="more"></a>
+            <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+            <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+            <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+            <a href="#" class="bds_tieba" data-cmd="tieba" title="分享到百度贴吧"></a>
+            <a href="#" class="bds_bdhome" data-cmd="bdhome" title="分享到百度首页"></a>
+        </div>
     </label>
     <section>
         <iframe class="ldgplayer" height="470" width="782" frameborder="0" border="0" marginwidth="0" marginheight="0"
@@ -86,5 +96,6 @@
             </dl>
         </div>
     </article>
+    <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":["mshare","qzone","tsina","bdysc","weixin","bdxc","tqf","tieba","bdhome","sqq","ibaidu","huaban","duitang","twi","h163","copy"],"bdPic":"","bdStyle":"0","bdSize":"16"},"share":{},"image":{"viewList":["qzone","tsina","tqq","renren","weixin"],"viewText":"分享到：","viewSize":"16"}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
 @endsection
 

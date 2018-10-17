@@ -231,6 +231,8 @@ header .nav_main a:first-child {
 
 label h2 {
     margin: 0;
+    float: left;
+    padding-right: 8px;
 }
 label h2 a
 {
@@ -292,5 +294,13 @@ footer.ifoot {
     color: #888;
     text-align: center;
     line-height: 1.2;
+}
+.bdsharebuttonbox
+{
+    float: left;
+}
+.bdsharebuttonbox a
+{
+    margin-top: 10px!important;
 }
 
