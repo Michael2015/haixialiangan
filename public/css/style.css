@@ -278,14 +278,20 @@ label h2 a
     list-style: none;
     float: left;
     overflow: hidden;
-    margin-right: 9px;
+    margin-right: 2px;
     font-size: 16px;
-
 }
-.page>.pagination>li span
+.page>.pagination>li>a,.page>.pagination>li>span
 {
-    font-size: 14px;
+    height: 20px;
+    display: block;
+    background: #03235c;
+    color: white!important;
+    width: 20px;
+    text-align: center;
+    line-height: 20px;
 }
+
 footer.ifoot {
     padding: 1rem 0;
     width: 100%;
