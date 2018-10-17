@@ -108,7 +108,7 @@ class VideoController extends Controller
         $video_content = Feature::where('guid', '=', $guid)->take(1)->get();
         $video_content = json_decode($video_content,true);
         if ($video_content) {
-            $title = $video_content[0]['video_title'] . '在线直播视频';
+            $title = $video_content[0]['video_title'] . '_直播视频花絮';
             $keywords = $video_content[0]['keyword'];
             $description = $video_content[0]['content'];
             //关联视频
@@ -136,7 +136,7 @@ class VideoController extends Controller
         $video_content = Video::where('guid', '=', $guid)->take(1)->get();
         $video_content = json_decode($video_content,true);
         if ($video_content) {
-            $title = $video_content[0]['video_title'] . '在线直播视频';
+            $title = $video_content[0]['video_title'] . '_完整直播视频';
             $keywords = $video_content[0]['keyword'];
             $description = $video_content[0]['content'];
             //关联视频
