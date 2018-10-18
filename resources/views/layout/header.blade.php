@@ -37,3 +37,14 @@
     </div>
 </header>
 <div class="main w">
+    @if($current_action_name !== 'index')
+        <nav class="breadcrumb">
+            <a class="maincolor" href="{{URL::to('/')}}">首页</a>
+            <span class="c-666 en">&gt;</span>
+            <a href="@if($current_action_name == 'fplay' || $current_action_name == 'feature')/feature @else /video @endif">@if($current_action_name == 'fplay' || $current_action_name == 'feature') 海峡两岸视频花絮 @else 海峡两岸完整视频   @endif</a>
+            @if($current_action_name == 'fplay' || $current_action_name == 'vplay')
+                <span class="c-666 en">&gt;</span>
+                <a href="{{URL::current()}}" class="c-666">{{$title}}</a>
+            @endif
+        </nav>
+    @endif

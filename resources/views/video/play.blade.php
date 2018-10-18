@@ -2,7 +2,7 @@
 @section('content')
     <div class="dt-content">
         <label>
-            <h2>{{$video_content[0]['video_title']}}</h2>
+            <h2><a href="{{URL::current()}}">{{$video_content[0]['video_title']}}</a></h2>
             <div class="bdsharebuttonbox">
                 <a href="#" class="bds_more" data-cmd="more"></a>
                 <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
