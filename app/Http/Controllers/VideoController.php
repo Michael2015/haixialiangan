@@ -10,13 +10,18 @@ namespace App\Http\Controllers;
 
 use App\Model\Feature;
 use App\Model\Video;
-use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\View;
 
 class VideoController extends Controller
 {
     private $isMobile;
     public function __construct()
     {
+        $route = Route::currentRouteAction();
+        $route = strstr($route,'@');
+        $current_action_name = substr($route,1);
+        View::share('current_action_name',$current_action_name);
         $this->isMobile = isMobile();
     }
     /**

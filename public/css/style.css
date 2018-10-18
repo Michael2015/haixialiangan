@@ -52,7 +52,12 @@ header .nav_main a {
     float: left;
     transition: background-color .2s linear 0s;
 }
-
+header .nav_main a.current
+{
+    background: white;
+    color: #03235c;
+    font-weight: bold;
+}
 header .nav_main a:first-child {
     padding-left: 0 !important;
 }

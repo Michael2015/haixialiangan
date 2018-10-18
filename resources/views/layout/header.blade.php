@@ -28,9 +28,9 @@
         <a href="{{URL::to('/')}}"  title="海峡两岸">
             <img src="{{URL::asset('images/logo.png')}}" class="logo" height="38px" alt="海峡两岸">
         </a>
-        <a href="{{URL::to('/')}}" class="menu current">海峡两岸</a>
-        <a href="{{URL::to('/video')}}" class="menu">海峡两岸完整视频</a>
-        <a href="{{URL::to('/feature')}}" class="menu">海峡两岸视频花絮</a>
+        <a href="{{URL::to('/')}}" class="menu @if($current_action_name == 'index') current @endif">海峡两岸</a>
+        <a href="{{URL::to('/video')}}" class="menu @if($current_action_name == 'video'  || $current_action_name == 'vplay') current @endif">海峡两岸完整视频</a>
+        <a href="{{URL::to('/feature')}}" class="menu @if($current_action_name == 'feature'  || $current_action_name == 'fplay') current @endif">海峡两岸视频花絮</a>
         <span class="icon_hot"></span>
         <a href="{{URL::to('/sitemap.html')}}" title="网站导航" style="float: right">网站导航</a>
         <a href="{{URL::to('/rss.xml')}}" title="网站RSS" style="float: right">网站RSS</a>
