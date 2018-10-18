@@ -33,6 +33,7 @@
         <a href="{{URL::to('/feature')}}" class="menu">海峡两岸视频花絮</a>
         <span class="icon_hot"></span>
         <a href="{{URL::to('/sitemap.html')}}" title="网站导航" style="float: right">网站导航</a>
+        <a href="{{URL::to('/rss.xml')}}" title="网站RSS" style="float: right">网站RSS</a>
     </div>
 </header>
 <div class="main w">

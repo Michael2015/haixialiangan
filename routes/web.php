@@ -15,3 +15,8 @@ Route::get('/video','VideoController@video');
 Route::get('/feature','VideoController@feature');
 Route::get('/video/{guid}.html','VideoController@vplay');
 Route::get('/feature/{date}/{guid}.html','VideoController@fplay');
+
+//网站地图
+Route::get('/sitemap','SitemapController@index');
+//网站RSS
+Route::get('/rss','RssController@index');
