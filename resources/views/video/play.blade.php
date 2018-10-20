@@ -28,8 +28,9 @@
                                  alt="{{$video['video_title']}}">
                         </a>
                         <p>{{$video['video_title']}}</p>
+                        <span class="my_video_length video_length video_play" title="视频时长">{{$video['video_length']}}</span>
                     </li>
-                @endforeach
+                    @endforeach
             </ul>
         </div>
         <div class="dt-detail">

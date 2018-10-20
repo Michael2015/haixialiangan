@@ -29,6 +29,7 @@
                         <h3><a href="/feature/{{$feature['date']}}/{{$feature['guid']}}.html"><b>{{$feature['date']}}
                                     期片段</b>&nbsp;{{$feature['video_title']}}</a></h3>
                     </div>
+                    <span class="my_video_length" title="视频时长">{{$feature['video_length']}}</span>
                 </li>
             @endforeach
         </ul>

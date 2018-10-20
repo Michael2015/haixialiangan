@@ -11,6 +11,7 @@
                                 src="http://img.haixialiangan.wang?img_url={{substr($f->video_key_frame_url,25)}}"
                                 alt="{{$f->video_title}}"></a>
                     <a title="{{$f->video_title}}" href="/feature/{{$f->date}}/{{$f->guid}}.html">{{$f->video_title}}</a>
+                    <span class="my_video_length video_length" title="视频时长">{{$f->video_length}}</span>
                 </li>
                 @endforeach
                 <div class="clear"></div>

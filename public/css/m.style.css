@@ -72,12 +72,13 @@ header .nav_main a:first-child {
 }
 
 .main aside ul {
-    padding-left: 3%;
+    padding-left: 0;
     margin: 0 !important;
 }
 
 .main aside ul li {
     list-style: none;
+    position: relative;
 }
 .main aside ul li>div a{
     height: 70px;
@@ -188,6 +189,7 @@ header .nav_main a:first-child {
     overflow: hidden;
     margin-top: 5px;
     width: 50%;
+    position: relative;
 }
 
 .video-list ul li a {
@@ -195,16 +197,14 @@ header .nav_main a:first-child {
 }
 
 .video-list li img {
-    width: 97%;
-    padding-left: 3%;
+    width: 100%;
     height: 133px;
     image-rendering: -webkit-optimize-contrast;
 }
 .video-list li a
 {
     display: block;
-    width: 97%;
-    padding-left: 3%;
+    width: 100%;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -247,6 +247,7 @@ label h2 {
     float: left;
     width: 50%;
     text-align: center;
+    position: relative;
 }
 
 .dt-rt ul li img {
@@ -279,13 +280,26 @@ label h2 {
 }
 .page>.pagination>li,.page>.pagination>li>span
 {
+    width: auto;!important;
+    display: block;
     list-style: none;
     float: left;
     overflow: hidden;
-    margin-right: 9px;
+    margin-right: 2px;
     font-size: 16px;
-
 }
+.page>.pagination>li>a,.page>.pagination>li>span
+{
+    height: 20px;
+    display: block;
+    background: #03235c;
+    color: white!important;
+    width: 20px;
+    text-align: center;
+    line-height: 20px;
+}
+
+
 .page>.pagination>li span
 {
     font-size: 14px;
@@ -299,4 +313,38 @@ footer.ifoot {
     text-align: center;
     line-height: 1.2;
 }
+span.my_video_length
+{
+    display: inline-block;
+    background: #0C0C0C;
+    opacity: 0.6;
+    padding: 2px 0;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    width: 100px;
+    bottom: 0;
 
+}
+span.my_video_length.video_length
+{
+    width: 100%;
+    bottom: 23px;
+    left: 0;
+}
+span.my_video_length.video_length.video_play
+{
+    width: 96%;
+    left: 2%;
+    bottom: 33px;
+}
+span.m-video-length
+{
+    left: 12px;
+}
+
+.breadcrumb
+{
+    margin-top: 13px;
+}
