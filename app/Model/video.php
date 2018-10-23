@@ -31,7 +31,7 @@ class Video extends Eloquent
     {
         if (is_array($row)) {
             foreach ($row as $value) {
-                preg_match('#(\d{8})#', $value['video_focus_date'], $matches);
+                preg_match('#(\d{8})#', $value['video_title'], $matches);
                 $obj = new self();
                 $obj->video_id = $value['video_id'];
                 $obj->video_key_frame_url = $value['video_key_frame_url'];
