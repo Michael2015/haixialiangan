@@ -124,7 +124,7 @@ class VideoController extends Controller
             });
 
         } else {
-            die('非法访问');
+            abort(404, '未授权操作');
         }
         return view('video.play', [
             'title' => $title,
@@ -152,7 +152,7 @@ class VideoController extends Controller
             });
 
         } else {
-            die('非法访问');
+            abort(404, '未授权操作');
         }
 
         return view('video.play', [
